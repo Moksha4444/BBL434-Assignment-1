@@ -191,7 +191,7 @@ class PlasmidAssembler:
     @staticmethod
     def load_genetic_marker(marker_identifier):
         #Retrieve marker sequence from file
-        marker_file = f"markers/{marker_identifier}.fa"
+        marker_file = f"{marker_identifier}.fa"
         
         if not os.path.exists(marker_file):
             print(f"⚠ Missing marker file: {marker_identifier}")
